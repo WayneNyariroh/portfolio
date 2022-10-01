@@ -1,5 +1,5 @@
 ## Wayne Willis Portfolio
-mobile number: ***+254768715840, +254755976610***<br>
+mobile number: ***+254768715840***<br>
 email: ***wayneaudu6@outlook.com***<br>
 <a id="raw-url" href="https://raw.githubusercontent.com/WayneNyariroh/portfolio/main/Wayne_Willis_RESUME.pdf">My Resume</a>
 
