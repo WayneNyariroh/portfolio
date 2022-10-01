@@ -2,7 +2,7 @@
 mobile number: ***+254768715840, +254755976610***<br>
 email: ***wayneaudu6@outlook.com***<br>
 <a id="raw-url" href="https://raw.githubusercontent.com/WayneNyariroh/portfolio/main/Wayne_Willis_RESUME.pdf">My Resume</a>
----
+***
 
 A journey into Data Science and Data Engineering.
 
@@ -31,7 +31,8 @@ sns.heatmap(no_of_sales_table2, cmap='Blues', annot=True, annot_kws={"size":11},
 
 ![PowerBI Dashboard](/visualization_output/DashboardScreenshot.png)
 
-A simple and user-friendly dashboard that display annotations of each value and allows filtering on the visualizations and insights based on selected values, focusing on Revenue, Number of Sales and Profit to allow interactivity.
+A simple and user-friendly dashboard that display annotations of each value and allows filtering on the visualizations and insights based on selected values, focusing on Revenue, Number of Sales and Profit to allow interactivity.<br>
+[SuperStore Dashboard](https://github.com/WayneNyariroh/StoreSales_PowerBI_Dashboard/blob/main/SuperStoreDashboard.pbix)
 
 
 
