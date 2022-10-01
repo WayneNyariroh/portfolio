@@ -1,4 +1,4 @@
-## Wayne Willis Portfolio
+## 👨‍💻Wayne Willis Omondi
 📞 ***+254768715840***<br>
 📧***wayneaudu6@outlook.com***<br>
 📄<ins><a id="raw-url" href="https://raw.githubusercontent.com/WayneNyariroh/portfolio/main/Wayne_Willis_RESUME.pdf">My Resume</a></ins>
@@ -6,7 +6,7 @@
 ---
 
 My journey into Data Science and Data Engineering.
-> feel free to explore the source codes 👨‍💻 👍
+> feel free to explore the source codes 👍
 
 ### <ins>[1: Exploratory Data Analysis & Visualization Using Python](https://github.com/WayneNyariroh/StoreSales_Analysis)</ins>
 Every business is highly dependent on its data to make better decisions for growth and success, data analysis plays an important role in helping different business entities to get an idea on their performance and any opportunities to increase gains and minimise losses. 
