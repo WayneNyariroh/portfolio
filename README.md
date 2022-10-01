@@ -2,9 +2,10 @@
 mobile number: ***+254768715840, +254755976610***<br>
 email: ***wayneaudu6@outlook.com***<br>
 <a id="raw-url" href="https://raw.githubusercontent.com/WayneNyariroh/portfolio/main/Wayne_Willis_RESUME.pdf">My Resume</a>
-***
 
-A journey into Data Science and Data Engineering.
+---
+
+My journey into Data Science and Data Engineering.
 
 ### [1: Exploratory Data Analysis & Visualization Using Python](https://github.com/WayneNyariroh/StoreSales_Analysis)
 Every business is highly dependent on its data to make better decisions for growth and success, data analysis plays an important role in helping different business entities to get an idea on their performance and any opportunities to increase gains and minimise losses. 
