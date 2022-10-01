@@ -26,7 +26,7 @@ sns.heatmap(no_of_sales_table2, cmap='Blues', annot=True, annot_kws={"size":11},
 
 ---
 
-### [2: PowerBI Visualization Of Project 1](https://github.com/WayneNyariroh/StoreSales_PowerBI_Dashboard)
+### [2: PowerBI Visualization Project](https://github.com/WayneNyariroh/StoreSales_PowerBI_Dashboard)
 
 ![PowerBI Dashboard](/visualization_output/DashboardScreenshot.png)
 
