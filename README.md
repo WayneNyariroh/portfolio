@@ -1,7 +1,7 @@
-## :kenya: Wayne Willis Portfolio
-:telephone_receiver: ***+254768715840***<br>
-:email: ***wayneaudu6@outlook.com***<br>
-:page_facing_up: <ins><a id="raw-url" href="https://raw.githubusercontent.com/WayneNyariroh/portfolio/main/Wayne_Willis_RESUME.pdf">My Resume</a></ins>
+## :kenya:Wayne Willis Portfolio
+:telephone_receiver:***+254768715840***<br>
+:email:***wayneaudu6@outlook.com***<br>
+:page_facing_up:<ins><a id="raw-url" href="https://raw.githubusercontent.com/WayneNyariroh/portfolio/main/Wayne_Willis_RESUME.pdf">My Resume</a></ins>
 
 ---
 
