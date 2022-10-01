@@ -1,11 +1,12 @@
-## Wayne Willis Portfolio
-mobile number: ***+254768715840***<br>
-email: ***wayneaudu6@outlook.com***<br>
-<a id="raw-url" href="https://raw.githubusercontent.com/WayneNyariroh/portfolio/main/Wayne_Willis_RESUME.pdf">My Resume</a>
+## :kenya: Wayne Willis Portfolio
+:telephone_receiver: ***+254768715840***<br>
+:email: ***wayneaudu6@outlook.com***<br>
+:page_facing_up: <ins><a id="raw-url" href="https://raw.githubusercontent.com/WayneNyariroh/portfolio/main/Wayne_Willis_RESUME.pdf">My Resume</a></ins>
 
 ---
 
 My journey into Data Science and Data Engineering.
+> feel free to explore the source codes :man_technologist: 
 
 ### <ins>[1: Exploratory Data Analysis & Visualization Using Python](https://github.com/WayneNyariroh/StoreSales_Analysis)</ins>
 Every business is highly dependent on its data to make better decisions for growth and success, data analysis plays an important role in helping different business entities to get an idea on their performance and any opportunities to increase gains and minimise losses. 
@@ -28,7 +29,7 @@ sns.heatmap(no_of_sales_table2, cmap='Blues', annot=True, annot_kws={"size":11},
 
 ---
 
-### [2: PowerBI Visualization Project](https://github.com/WayneNyariroh/StoreSales_PowerBI_Dashboard)
+### <ins>[2: PowerBI Visualization Project](https://github.com/WayneNyariroh/StoreSales_PowerBI_Dashboard)</ins>
 
 ![PowerBI Dashboard](/visualization_output/DashboardScreenshot.png)
 
