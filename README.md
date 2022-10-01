@@ -1,7 +1,7 @@
 ## Wayne Willis Portfolio
 mobile number: ***+254768715840, +254755976610***<br>
 email: ***wayneaudu6@outlook.com***<br>
-<a id="raw-url" href="https://raw.githubusercontent.com/WayneNyariroh/portfolio/main/Wayne_Willis_RESUME.pdf">View Resume</a>
+<a id="raw-url" href="https://raw.githubusercontent.com/WayneNyariroh/portfolio/main/Wayne_Willis_RESUME.pdf">My Resume</a>
 ---
 A journey into Data Science and Data Engineering.
 
@@ -15,8 +15,11 @@ The objective was to gain valuable insights on the overall performance of the St
 
 Insights:<br>
 ```
-https://github.com/WayneNyariroh/StoreSales_Analysis/blob/18e5945ffd6e5df3d06961999759cc2eacc5c2a0/superStoreSales_EDA.ipynb
+plt.figure(figsize=(20,5)) #size of plot
+plt.title('SuperStore - Number of Sales Each Month for the Review Period: 2015 - 2019', fontsize=11, fontweight='bold') #title
+sns.heatmap(no_of_sales_table2, cmap='Blues', annot=True, annot_kws={"size":11}, fmt="d", cbar=False) #the plot. annotation true, colors Blues, colorbar disabled
 ```
+
 ![Month and Sales!](/visualization_output/monthlysales.png)<br>
 
 ![The San Juan Mountains are beautiful!](/visualization_output/corr output.png)<br>
@@ -25,7 +28,9 @@ https://github.com/WayneNyariroh/StoreSales_Analysis/blob/18e5945ffd6e5df3d06961
 
 ### [2: PowerBI Visualization Of Project 1](https://github.com/WayneNyariroh/StoreSales_PowerBI_Dashboard)
 
-![PowerBI Dashboard](https://github.com/WayneNyariroh/StoreSales_PowerBI_Dashboard/blob/main/assets/images/DashboardScreenshot.png)
+![PowerBI Dashboard](/visualization_output/DashboardScreenshot.png)
+
+A simple and user-friendly dashboard that display annotations of each value and allows filtering on the visualizations and insights based on selected values, focusing on Revenue, Number of Sales and Profit to allow interactivity.
 
 
 
