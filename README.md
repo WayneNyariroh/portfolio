@@ -1,4 +1,4 @@
-## <center>Wayne Willis Portfolio</center>
+## Wayne Willis Portfolio
 mobile number: ***+254768715840, +254755976610***<br>
 email: ***wayneaudu6@outlook.com***<br>
 <a id="raw-url" href="https://raw.githubusercontent.com/WayneNyariroh/portfolio/main/Wayne_Willis_RESUME.pdf">View Resume</a>
@@ -14,6 +14,9 @@ The objective was to gain valuable insights on the overall performance of the St
 > **Concepts explored**: Pearson's Correlation and Customer Retention using Cohort Analysis. <br>
 
 Insights:<br>
+```
+https://github.com/WayneNyariroh/StoreSales_Analysis/blob/18e5945ffd6e5df3d06961999759cc2eacc5c2a0/superStoreSales_EDA.ipynb
+```
 ![Month and Sales!](/visualization_output/monthlysales.png)<br>
 
 ![The San Juan Mountains are beautiful!](/visualization_output/corr output.png)<br>
@@ -21,6 +24,9 @@ Insights:<br>
 ---
 
 ### [2: PowerBI Visualization Of Project 1](https://github.com/WayneNyariroh/StoreSales_PowerBI_Dashboard)
+
+![PowerBI Dashboard](https://github.com/WayneNyariroh/StoreSales_PowerBI_Dashboard/blob/main/assets/images/DashboardScreenshot.png)
+
 
 
 
