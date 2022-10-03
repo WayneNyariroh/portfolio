@@ -14,13 +14,13 @@ The objective was to gain valuable insights on the overall performance of the St
 > Data was sourced from ***Kaggle***. <br>
 > **Tools used**: Python, pandas, numpy, jupyter lab, matplotlib and seaborn. <br>
 > **Activities**: Data processing, data cleaning, data querying and vizualization. <br>
-> **Concepts explored**: Pearson's Correlation and Customer Retention using Cohort Analysis. <br>
+> **Concepts explored**: Pearson's Correlation, Pivoting and Indexing, Date Manipulation. <br>
 
 Insights:<br>
 ```
-plt.figure(figsize=(20,5)) #size of plot
-plt.title('SuperStore - Number of Sales Each Month for the Review Period: 2015 - 2019', fontsize=11, fontweight='bold') #title
-sns.heatmap(no_of_sales_table2, cmap='Blues', annot=True, annot_kws={"size":11}, fmt="d", cbar=False) #the plot. annotation true, colors Blues, colorbar disabled
+plt.figure(figsize=(20,5))
+plt.title('SuperStore - Number of Sales Each Month for the Review Period: 2015 - 2019', fontsize=11, fontweight='bold')
+sns.heatmap(no_of_sales_table2, cmap='Blues', annot=True, annot_kws={"size":11}, fmt="d", cbar=False) 
 ```
 
 ![Month and Sales!](/visualization_output/monthlysales.png)<br>
