@@ -28,8 +28,17 @@ sns.heatmap(no_of_sales_table2, cmap='Blues', annot=True, annot_kws={"size":11},
 ![The San Juan Mountains are beautiful!](/visualization_output/corr output.png)<br>
 
 ---
+### <ins>[2: Customer Retention: Performing a Cohort Analysis using Python](https://github.com/WayneNyariroh/customer-retention_cohortAnalysis/blob/main/RetentionAnalysis.ipynb)</ins>
+Monitoring retention metrics is critical for a business to understand lifetime customer value and to quantify the efficacy of its marketing strategy and customer service program.
+> Customer retention is when one of your buyers purchases from you again. A business' customer retention rate compares the number of customers you have retained to your total number of customers during a certain period.
+> You can use customer loyalty programs, customer feedback surveys, social media and additional incentives to improve your customer retention rate.
+For this project I used the SuperStore dataset. 
+> **Tools used**: Python, pandas, numpy, jupyter lab, matplotlib and seaborn. <br>
+> **Activities**: Data processing, data cleaning, data querying, creating pivot table, indexing, and vizualization. <br>
+> **Concept explored:** Cohorts.
 
-### <ins>[2: PowerBI Visualization Project](https://github.com/WayneNyariroh/StoreSales_PowerBI_Dashboard)</ins>
+---
+### <ins>[3: PowerBI Visualization Project](https://github.com/WayneNyariroh/StoreSales_PowerBI_Dashboard)</ins>
 
 ![PowerBI Dashboard](/visualization_output/DashboardScreenshot.png)
 
