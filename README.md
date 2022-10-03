@@ -35,7 +35,7 @@ A business' customer retention rate compares the number of customers you have re
 For this project I used the SuperStore dataset from ***Kaggle*** & it serves as a continuation of the [Exploratory Data Analysis Project](https://github.com/WayneNyariroh/StoreSales_Analysis) above<br>
 > **Tools used**: Python, pandas, jupyter lab, matplotlib and seaborn. <br>
 > **Activities**: Data processing, data cleaning, data querying, creating pivot tables, indexing, and vizualization. <br>
-> **Concept explored:** Cohorts.<br
+> **Concept explored:** Cohorts.<br>
 <br>
 Concept of Cohorts and Retention Analysis can be extended to various organization and institution; a private clinic can use it to observe returning patients. Clients are assigned to a cohort based on the first time they appeared in the dataset i.e, the time of first order, then their behaviour monitored over a duration.
 
