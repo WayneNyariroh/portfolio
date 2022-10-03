@@ -32,9 +32,9 @@ sns.heatmap(no_of_sales_table2, cmap='Blues', annot=True, annot_kws={"size":11},
 Monitoring retention metrics is critical for a business to understand lifetime customer value and to quantify the efficacy of its marketing strategy and customer service program.
 ***Customer retention is when one of your buyers purchases from you again***.<br>
 A business' customer retention rate compares the number of customers you have retained to your total number of customers during a certain period. You can use customer loyalty programs, customer feedback surveys, social media and additional incentives to improve your customer retention rate.<br>
->For this project I used the SuperStore dataset from ***Kaggle*** & it serves as a continuation of the [Exploratory Data Analysis Project](https://github.com/WayneNyariroh/StoreSales_Analysis) above<br>
-> **Tools used**: Python, pandas, numpy, jupyter lab, matplotlib and seaborn. <br>
-> **Activities**: Data processing, data cleaning, data querying, creating pivot table, indexing, and vizualization. <br>
+For this project I used the SuperStore dataset from ***Kaggle*** & it serves as a continuation of the [Exploratory Data Analysis Project](https://github.com/WayneNyariroh/StoreSales_Analysis) above<br>
+> **Tools used**: Python, pandas, jupyter lab, matplotlib and seaborn. <br>
+> **Activities**: Data processing, data cleaning, data querying, creating pivot tables, indexing, and vizualization. <br>
 > **Concept explored:** Cohorts.<br
 <br>
 Concept of Cohorts and Retention Analysis can be extended to various organization and institution; a private clinic can use it to observe returning patients. Clients are assigned to a cohort based on the first time they appeared in the dataset i.e, the time of first order, then their behaviour monitored over a duration.
