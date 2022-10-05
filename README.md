@@ -30,7 +30,8 @@ sns.heatmap(no_of_sales_table2, cmap='Blues', annot=True, annot_kws={"size":11},
 Monitoring retention metrics is critical for a business to understand lifetime customer value and to quantify the efficacy of its marketing strategy and customer service program.
 ***Customer retention is when one of your buyers purchases from you again***.<br>
 
-![Retention Rates!](visualization_output/cohortplots (2).png)<br>
+![Retention Rates!](visualization_output/cohortplots2.png)<br>
+
 
 A business' customer retention rate compares the number of customers you have retained to your total number of customers during a certain period. You can use customer loyalty programs, customer feedback surveys, social media and additional incentives to improve your customer retention rate.<br>
 >SuperStore dataset from ***Kaggle*** & it serves as a continuation of the [Exploratory Data Analysis Project](https://github.com/WayneNyariroh/StoreSales_Analysis) above<br>
