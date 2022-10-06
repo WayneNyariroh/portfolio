@@ -25,7 +25,7 @@ sns.heatmap(no_of_sales_table2, cmap='Blues', annot=True, annot_kws={"size":11},
 
 ![Month and Sales!](/visualization_output/monthlysales.png)<br>
 
-<center>*[View Project](https://github.com/WayneNyariroh/StoreSales_Analysis)*</center>
+<center><ins>[View Project](https://github.com/WayneNyariroh/StoreSales_Analysis)</ins></center>
 
 ---
 ### <ins>[2: Customer Retention: Performing a Cohort Analysis using Python](https://github.com/WayneNyariroh/customer-retention_cohortAnalysis/blob/main/RetentionAnalysis.ipynb)</ins>
@@ -44,6 +44,9 @@ A business' customer retention rate compares the number of customers you have re
 
 Clients are assigned to a cohort based on the first time they appeared in the dataset i.e, the time of first order, then their behaviour monitored over a duration. Concept of Cohorts and Retention Analysis can be extended to various organizations and institutions; a private clinic can use it to observe returning patients or monitor appointment keeping.<br>
 
+<center><ins>[View Project](https://github.com/WayneNyariroh/customer-retention_cohortAnalysis/blob/main/RetentionAnalysis.ipynb)</ins></center>
+
+
 ---
 ### <ins>[3: PowerBI Visualization Project](https://github.com/WayneNyariroh/StoreSales_PowerBI_Dashboard)</ins>
 
@@ -52,6 +55,7 @@ Clients are assigned to a cohort based on the first time they appeared in the da
 A simple and user-friendly dashboard that display annotations of each value and allows filtering on the visualizations and insights based on selected values, focusing on Revenue, Number of Sales and Profit to allow interactivity.<br>
 [SuperStore Dashboard](https://github.com/WayneNyariroh/StoreSales_PowerBI_Dashboard/blob/main/SuperStoreDashboard.pbix)
 
+<center><ins>[View Project](https://github.com/WayneNyariroh/customer-retention_cohortAnalysis/blob/main/RetentionAnalysis.ipynb)</ins></center>
 
 
 
