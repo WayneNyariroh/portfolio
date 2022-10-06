@@ -33,14 +33,12 @@ Monitoring retention metrics is critical for a business to understand lifetime c
 ***Customer retention is when one of your buyers purchases from you again***.<br>
 
 ```python
-{
 retention_rates_2015 = cohort_table_2015.divide(cohort_table_2015.iloc[:,0], axis=0)
 
 plt.figure(figsize=(20,8))
 plt.title('SuperStore - Customer Retention Rates: 2015',fontsize=11, fontweight='bold')
 sns.heatmap(retention_rates_2015, annot=True, cmap='Blues', fmt='.0%')
 plt.show()
-}
 ```
 
 ![Retention Rates!](visualization_output/cohortplots2.png)<br>
