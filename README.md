@@ -18,9 +18,11 @@ The objective was to gain valuable insights on the overall performance of the St
 
 Insights:<br>
 ```python
+no_of_sales_table = pd.pivot_table(store_df, values='Sales', index='Order Year', columns='Order Month', aggfunc='count', margins=True)
+ 
 plt.figure(figsize=(20,5))
 plt.title('SuperStore - Number of Sales Each Month for the Review Period: 2015 - 2019', fontsize=11, fontweight='bold')
-sns.heatmap(no_of_sales_table2, cmap='Blues', annot=True, annot_kws={"size":11}, fmt="d", cbar=False) 
+sns.heatmap(no_of_sales_table, cmap='Blues', annot=True, annot_kws={"size":11}, fmt="d", cbar=False) 
 ```
 
 ![Month and Sales!](/visualization_output/monthlysales.png)<br>
