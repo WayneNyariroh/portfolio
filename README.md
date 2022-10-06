@@ -25,8 +25,7 @@ sns.heatmap(no_of_sales_table2, cmap='Blues', annot=True, annot_kws={"size":11},
 
 ![Month and Sales!](/visualization_output/monthlysales.png)<br>
 
->> :Buttons
->> :Button label=View Project, url=https://github.com/WayneNyariroh/StoreSales_Analysis
+<center>*[View Project](https://github.com/WayneNyariroh/StoreSales_Analysis)*</center>
 
 ---
 ### <ins>[2: Customer Retention: Performing a Cohort Analysis using Python](https://github.com/WayneNyariroh/customer-retention_cohortAnalysis/blob/main/RetentionAnalysis.ipynb)</ins>
