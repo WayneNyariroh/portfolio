@@ -25,7 +25,7 @@ sns.heatmap(no_of_sales_table2, cmap='Blues', annot=True, annot_kws={"size":11},
 
 ![Month and Sales!](/visualization_output/monthlysales.png)<br>
 
-<center><ins>[View Project](https://github.com/WayneNyariroh/StoreSales_Analysis)</ins></center>
+<center><ins>[View Project](https://github.com/WayneNyariroh/StoreSales_Analysis/blob/main/superStoreSales_EDA.ipynb)</ins></center>
 
 ---
 ### <ins>[2: Customer Retention: Performing a Cohort Analysis using Python](https://github.com/WayneNyariroh/customer-retention_cohortAnalysis/blob/main/RetentionAnalysis.ipynb)</ins>
@@ -54,7 +54,10 @@ Clients are assigned to a cohort based on the first time they appeared in the da
 A simple and user-friendly dashboard that display annotations of each value and allows filtering on the visualizations and insights based on selected values, focusing on Revenue, Number of Sales and Profit to allow interactivity.<br>
 [SuperStore Dashboard](https://github.com/WayneNyariroh/StoreSales_PowerBI_Dashboard/blob/main/SuperStoreDashboard.pbix)
 
-<center><ins>[View Project](https://github.com/WayneNyariroh/StoreSales_PowerBI_Dashboard)</ins></center>
+<center><ins>[Download Dashboard](https://github.com/WayneNyariroh/StoreSales_PowerBI_Dashboard)</ins></center>
+  
+ [Click me](http://www.google.com){: .btn}
+
 
 
 
