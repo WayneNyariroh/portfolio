@@ -18,7 +18,8 @@ The objective was to gain valuable insights on the overall performance of the St
 
 Insights:<br>
 ```python
-no_of_sales_table = pd.pivot_table(store_df, values='Sales', index='Order Year', columns='Order Month', aggfunc='count', margins=True)
+no_of_sales_table = pd.pivot_table(store_df, values='Sales',
+                    index='Order Year', columns='Order Month', aggfunc='count', margins=True)
  
 plt.figure(figsize=(20,5))
 plt.title('SuperStore - Number of Sales Each Month for the Review Period: 2015 - 2019', fontsize=11, fontweight='bold')
