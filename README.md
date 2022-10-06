@@ -53,12 +53,8 @@ Clients are assigned to a cohort based on the first time they appeared in the da
 
 A simple and user-friendly dashboard that display annotations of each value and allows filtering on the visualizations and insights based on selected values, focusing on Revenue, Number of Sales and Profit to allow interactivity.<br>
 [SuperStore Dashboard](https://github.com/WayneNyariroh/StoreSales_PowerBI_Dashboard/blob/main/SuperStoreDashboard.pbix)
-
-<center><ins>[Download Dashboard](https://github.com/WayneNyariroh/StoreSales_PowerBI_Dashboard)</ins></center>
-  
- [Click me](http://www.google.com){: .btn}
-
-
+ 
+<center><ins>[Get Dashboard](http://github.com/WayneNyariroh/StoreSales_PowerBI_Dashboard){: .btn}</ins></center>
 
 
 
