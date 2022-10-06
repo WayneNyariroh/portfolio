@@ -44,6 +44,15 @@ A business' customer retention rate compares the number of customers you have re
 
 Clients are assigned to a cohort based on the first time they appeared in the dataset i.e, the time of first order, then their behaviour monitored over a duration. Concept of Cohorts and Retention Analysis can be extended to various organizations and institutions; a private clinic can use it to observe returning patients or monitor appointment keeping.<br>
 
+```
+retention_rates_2015 = cohort_table_2015.divide(cohort_table_2015.iloc[:,0], axis=0)
+
+plt.figure(figsize=(20,8))
+plt.title('SuperStore - Customer Retention Rates: 2015',fontsize=11, fontweight='bold')
+sns.heatmap(retention_rates_2015, annot=True, cmap='Blues', fmt='.0%')
+plt.show()
+```
+
 <ins>[View Project](https://github.com/WayneNyariroh/customer-retention_cohortAnalysis/blob/main/RetentionAnalysis.ipynb)</ins>
 
 ---
