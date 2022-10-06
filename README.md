@@ -46,7 +46,6 @@ Clients are assigned to a cohort based on the first time they appeared in the da
 
 <center><ins>[View Project](https://github.com/WayneNyariroh/customer-retention_cohortAnalysis/blob/main/RetentionAnalysis.ipynb)</ins></center>
 
-
 ---
 ### <ins>[3: PowerBI Visualization Project](https://github.com/WayneNyariroh/StoreSales_PowerBI_Dashboard)</ins>
 
@@ -55,7 +54,7 @@ Clients are assigned to a cohort based on the first time they appeared in the da
 A simple and user-friendly dashboard that display annotations of each value and allows filtering on the visualizations and insights based on selected values, focusing on Revenue, Number of Sales and Profit to allow interactivity.<br>
 [SuperStore Dashboard](https://github.com/WayneNyariroh/StoreSales_PowerBI_Dashboard/blob/main/SuperStoreDashboard.pbix)
 
-<center><ins>[View Project](https://github.com/WayneNyariroh/customer-retention_cohortAnalysis/blob/main/RetentionAnalysis.ipynb)</ins></center>
+<center><ins>[View Project](https://github.com/WayneNyariroh/StoreSales_PowerBI_Dashboard)</ins></center>
 
 
 
