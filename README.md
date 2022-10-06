@@ -43,6 +43,7 @@ plt.show()
 
 ![Retention Rates!](visualization_output/cohortplots2.png)<br>
 
+> *In the figure, Cohort Index 1 serves as the first month a customer made an order, hence the values is 100% for each cohort month. The values in the subsequent Cohort Index shows how many of the customers in that monthly cohort made a new order. i.e, in Cohort Index 2 a month after the first order, 4% of the customers who made an order in January 2015 made a new purchase with the store*<br>
 
 A business' customer retention rate compares the number of customers you have retained to your total number of customers during a certain period. You can use customer loyalty programs, customer feedback surveys, social media and additional incentives to improve your customer retention rate.<br>
 >SuperStore dataset from ***Kaggle*** & it serves as a continuation of the [Exploratory Data Analysis Project](https://github.com/WayneNyariroh/StoreSales_Analysis) above<br>
