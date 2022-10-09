@@ -55,7 +55,7 @@ A business' customer retention rate compares the number of customers you have re
 > **Concept explored:** Cohorts.<br>
 
 
-Clients are assigned to a cohort based on the first time they appeared in the dataset i.e, the time of first order, then their behaviour monitored over a duration. Concept of Cohorts and Retention Analysis can be extended to various organizations and institutions; a private clinic can use it to observe returning patients or monitor appointment keeping.<br>
+Clients are assigned to a cohort based on the first time they appeared in the dataset i.e, the time of first order, then their purchasing behaviour monitored over a duration. Concept of Cohorts and Retention Analysis can be extended to various organizations and institutions; a private clinic can use it to observe returning patients or monitor appointment keeping.<br>
 
 <ins>[View Project](https://github.com/WayneNyariroh/customer-retention_cohortAnalysis/blob/main/RetentionAnalysis.ipynb)</ins>
 
