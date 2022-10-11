@@ -1,6 +1,8 @@
 ## 👨‍💻Wayne Willis Omondi
 📞 ***+254768715840***, ***+254755976610***<br>
 📧***wayneaudu6@outlook.com***<br>
+<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="waynewillislink" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://ke.linkedin.com/in/waynewillislink?trk=profile-badge">Wayne Willis</a></div>
 📄<ins><a id="raw-url" href="https://raw.githubusercontent.com/WayneNyariroh/portfolio/main/Wayne_Willis_RESUME.pdf">My Resume</a></ins>
 
 ---
