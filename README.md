@@ -8,7 +8,7 @@
 ---
 
 My journey into Data Science and Data Engineering.
-> feel free to explore the source codes 👍
+> feel free to explore the source codes on the github repositories👍
 
 ### <ins>[1: Exploratory Data Analysis & Visualization Using Python](https://github.com/WayneNyariroh/StoreSales_Analysis)</ins>
 Every business is highly dependent on its data to make better decisions for growth and success, data analysis plays an important role in helping different business entities to get an idea on their performance and any opportunities to increase gains and minimise losses. 
