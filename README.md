@@ -1,4 +1,4 @@
-## 👨‍💻Wayne Willis Omondi
+## 👨‍💻Wayne Willis, Omondi
 📞 ***+254768715840***, ***+254755976610***<br>
 📧***wayneaudu6@outlook.com***<br>
 📘[LinkedIn Profile](https://www.linkedin.com/in/waynewillislink/)<br>
@@ -14,8 +14,8 @@ My journey into Data Science and Data Engineering.
 Every business is highly dependent on its data to make better decisions for growth and success, data analysis plays an important role in helping different business entities to get an idea on their performance and any opportunities to increase gains and minimise losses. 
 The objective was to gain valuable insights on the overall performance of the Store.
 > Data was sourced from ***Kaggle***. <br>
-> **Tools used**: Python, pandas, numpy, jupyter lab, matplotlib and seaborn. <br>
-> **Activities**: Data processing, data cleaning, data querying and vizualization. <br>
+> **Tools used**: jupyter lab, python, pandas, numpy, matplotlib and seaborn. <br>
+> **Activities**: data processing, data cleaning, data querying and vizualization. <br>
 > **Concepts explored**: Correlation, Pivoting and Indexing, Date Manipulation. <br>
 
 Insights:<br>
