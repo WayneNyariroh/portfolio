@@ -51,10 +51,10 @@ plt.show()
 > *In the figure, Cohort Index 1 serves as the first month a customer made an order, hence the values is 100% for each cohort month. The values in the subsequent Cohort Index shows how many of the customers in that monthly cohort made a new order. i.e, in Cohort Index 2 a month after the first order, 4% of the customers who made an order in January 2015 made a new purchase with the store*<br>
 
 A business' customer retention rate compares the number of customers you have retained to your total number of customers during a certain period. You can use customer loyalty programs, customer feedback surveys, social media and additional incentives to improve your customer retention rate.<br>
->SuperStore dataset from ***Kaggle*** & it serves as a continuation of the [Exploratory Data Analysis Project](https://github.com/WayneNyariroh/StoreSales_Analysis) above<br>
-> **Tools used**: Python, pandas, jupyter lab, matplotlib and seaborn. <br>
+>SuperStore dataset from ***Kaggle*** & it serves as a continuation of the [Exploratory Data Analysis Project](https://github.com/WayneNyariroh/StoreSales_Analysis)<br>
+> **Tools used**: jupyter lab, python, pandas, matplotlib and seaborn. <br>
 > **Activities**: Data processing, data cleaning, data querying, creating pivot tables, indexing, and vizualization. <br>
-> **Concept explored:** Cohorts.<br>
+> **Concept explored:** Cohorts and retention.<br>
 
 
 Clients are assigned to a cohort based on the first time they appeared in the dataset i.e, the time of first order, then their purchasing behaviour monitored over a duration. Concept of Cohorts and Retention Analysis can be extended to various organizations and institutions; a private clinic can use it to observe returning patients or monitor appointment keeping.<br>
