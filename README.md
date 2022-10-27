@@ -82,23 +82,27 @@ Procedure:
 - Used read_html() method where html data is in tables .i.e., the wikitables in Wikipedia.
 - Used requests library to 'get' the IMBD web page(s) locally
 - Inspected HTML source on my browser to see the relevant tags that contained the information I needed
-- Used BeautifulSoup to parse (break into components) and extract relevant information. Considering the show had 15 seasons, for loop was necessary to extract information from each season.
+- Used BeautifulSoup to parse (break into components) and extract relevant information. Considering the show had 15 seasons, for loop was necessary to extract information from each season. As show in the code snippet below.
 
 ```python
+for season in range(15):
+    season_number = season + 1
+    imdb_url = f'https://www.imdb.com/title/tt0452046/episodes?season={season_number}' 
+    imdb_response = get(imdb_url)
+    season_html = BeautifulSoup(imdb_response.content)
+    season_info = season_html.findAll('div', attrs={
+        'class':'info'})
     for episode_number, episode in enumerate(season_info):
-        episode_name = episode.strong.a.text       
-        episode_description = episode.find(attrs={
-            'class':'item_description'}).text.strip()
-        episode_airdate = episode.find(attrs={
-            'class':'airdate'}).text.strip()
-        imdb_rating = episode.find(attrs={
-            'class':'ipl-rating-star__rating'}).text
+            episode_name = episode.strong.a.text       
+            episode_description = episode.find(attrs={
+                'class':'item_description'}).text.strip()
+            episode_airdate = episode.find(attrs={
+                'class':'airdate'}).text.strip()
+            imdb_rating = episode.find(attrs={
+                'class':'ipl-rating-star__rating'}).text
 ```
 - Created dataframes.
 - Cleaned the data. The datasets' data types needed cleaning and convertion inorder for them to be in formats friendly to analysis and manipulation.
 - Exported the scraped and cleaned data into relevant files, that I can later use for Data Analysis and/or visualization.
 
 <ins>[View Code](https://github.com/WayneNyariroh/criminalmindstv_webscraping_EDA/blob/main/CM-data-scraping.ipynb)</ins>
-
-
-
