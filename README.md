@@ -74,14 +74,14 @@ A simple and user-friendly dashboard that display annotations of each value and 
 ### <ins>[4: Web Scraping Data from Various Webpages: Criminal Minds TV show Data](https://github.com/WayneNyariroh/criminalmindstv_webscraping_EDA)</ins>
 Often the data we need for our projects, personal or professional, is not readily available. Web scraping is the process of extracting and parsing data from websites. It's a useful technique for gathering the data we need for sources online and creating our own datasets for analysis and vizualization.<br>
 <br>
-This project came up as I was watching the most recent season of one of my all-time favorite TV shows - Criminal Minds. I was curious about how the season rates and performances compared to the previous but the data was readily available on the IMDB Movies and Series Dataset on platforms like Kaggle. I had to 'extract' the data on Criminal Minds TV show from the relevant websites.<br>
+This project came up as I was watching the most recent season of one of my all-time favorite TV shows - Criminal Minds. I was curious about how the season rates and performances compared to the previous seasons; but the data was readily available on the IMDB Movies and Series Dataset on platforms like Kaggle. I had to 'extract' the data on Criminal Minds TV show from the relevant websites.<br>
 
 > **Libraries used**: jupyter lab, python, pandas, bs4, lxml, requests <br>
 
 Procedure:
 - Used read_html() method where html data is in tables .i.e., the wikitables in Wikipedia.
-- Used requests library to 'get' the IMBD web page(s) locally
-- Inspected HTML source on my browser to see the relevant tags that contained the information I needed
+- Used requests library to 'get' the IMBD web page(s) locally.
+- Inspected HTML source on my browser to see the relevant tags that contained the information I needed.
 - Used BeautifulSoup to parse (break into components) and extract relevant information. Considering the show had 15 seasons, for loop was necessary to extract information from each season. As show in the code snippet below.
 
 ```python
