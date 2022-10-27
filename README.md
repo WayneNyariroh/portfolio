@@ -70,5 +70,39 @@ A simple and user-friendly dashboard that display annotations of each value and 
  
 <ins>[View Project](http://github.com/WayneNyariroh/StoreSales_PowerBI_Dashboard)</ins>
 
+---
+### <ins>[3: Web Scraping Data from Various Webpages: Criminal Minds TV show Data](https://github.com/WayneNyariroh/criminalmindstv_webscraping_EDA/blob/main/CM-data-scraping.ipynb)</ins>
+Often the data we need for our projects, personal or professional, is not readily available. Web scraping is the process of extracting and parsing data from websites. It's a useful technique for gathering the data we need for sources online and creating our own datasets for analysis and vizualization.<br>
+This project came up as I was watching the most recent season of one of my all-time favorite TV shows - Criminal Minds. I was curious about how the season rates and performances compared to the previous but the data was readily available on the IMDB Movies and Series Dataset on platforms like Kaggle. I had to 'extract' the data on Criminal Minds TV show from the relevant websites.
+
+Procedure:
+- Used read_html() method where html data is in tables .i.e., the wikitables in Wikipedia.
+- Used requests library to 'get' the IMBD web page(s) locally
+- Inspected HTML source on my browser to see the relevant tags that contained the information I needed
+- Used BeautifulSoup to parse (break into components) and extract relevant information. Considering the show had 15 seasons, for loop was necessary to extract information from each season.
+- Created dataframes.
+- Cleaned the data. The datasets' data types needed cleaning and convertion inorder for them to be in formats friendly to analysis and manipulation.
+- Exported the scraped and cleaned data into relevant files, that I can later use for Data Analysis and/or visualization.
+
+```python
+    #retrieving on the relevant data from each season's retrieve html docs
+    for episode_number, episode in enumerate(season_info):
+        episode_name = episode.strong.a.text
+        #print(f'episode name: {episode_name}')
+        
+        episode_description = episode.find(attrs={
+            'class':'item_description'}).text.strip()
+        #print(f'summary: {episode_description}')
+        
+        episode_airdate = episode.find(attrs={
+            'class':'airdate'}).text.strip()
+        #print(f'episode aired on: {episode_airdate}')
+        
+        imdb_rating = episode.find(attrs={
+            'class':'ipl-rating-star__rating'}).text
+        #print(f'episode name: {imdb_rating}')
+
+```
+
 
 
