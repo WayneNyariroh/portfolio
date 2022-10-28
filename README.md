@@ -71,7 +71,7 @@ A simple and user-friendly dashboard that display annotations of each value and 
 <ins>[View Project](http://github.com/WayneNyariroh/StoreSales_PowerBI_Dashboard)</ins>
 
 ---
-### <ins>[4: Web Scraping Data from Various Webpages: Criminal Minds TV show Data](https://github.com/WayneNyariroh/criminalmindstv_webscraping_EDA)</ins>
+### <ins>[4: Web Scraping Data: Criminal Minds TV Show Data](https://github.com/WayneNyariroh/criminalmindstv_webscraping_EDA)</ins>
 Often the data we need for our projects, personal or professional, is not readily available. Web scraping is the process of extracting and parsing data from websites. It's a useful technique for gathering the data we need for sources online and creating our own datasets for analysis and vizualization.<br>
 <br>
 This project came up as I was watching the most recent season of one of my all-time favorite TV shows - Criminal Minds. I was curious about how the season rates and performances compared to the previous seasons; but the data was readily available on the IMDB Movies and Series Dataset on platforms like Kaggle. I had to 'extract' the data on Criminal Minds TV show from the relevant websites.<br>
