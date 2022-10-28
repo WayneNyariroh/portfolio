@@ -92,6 +92,7 @@ for season in range(15):
     season_html = BeautifulSoup(imdb_response.content)
     season_info = season_html.findAll('div', attrs={
         'class':'info'})
+        
     for episode_number, episode in enumerate(season_info):
             episode_name = episode.strong.a.text       
             episode_description = episode.find(attrs={
@@ -105,4 +106,4 @@ for season in range(15):
 - Cleaned the data. The datasets' data types needed cleaning and convertion inorder for them to be in formats friendly to analysis and manipulation.
 - Exported the scraped and cleaned data into relevant files, that I can later use for Data Analysis and/or visualization.
 
-<ins>[View Code](https://github.com/WayneNyariroh/criminalmindstv_webscraping_EDA/blob/main/CM-data-scraping.ipynb)</ins>
+<ins>[View Code](https://github.com/WayneNyariroh/criminalmindstv_webscraping_EDA/blob/main/criminalminds-tv-data-scraping.ipynb)</ins>
