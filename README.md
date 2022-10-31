@@ -44,7 +44,7 @@ for season in range(15):
 - Exported the scraped and cleaned data into relevant files.
 - Did a quick Exploratory Data Analysis and Visualization.
 
-![Analysis](https://github.com/WayneNyariroh/portfolio/blob/main/visualization_output/cmanalysis.png)
+![Criminal minds Analysis!](/visualization_output/cmanalysis.png)<br>
 
 <ins>[View Code](https://github.com/WayneNyariroh/criminalmindstv_webscraping_EDA/blob/main/criminalminds-tv-data-scraping.ipynb)</ins>
 
