@@ -71,10 +71,9 @@ sns.heatmap(no_of_sales_table, cmap='Blues', annot=True, annot_kws={"size":11}, 
 
 ![Month and Sales!](/visualization_output/monthlysales.png)<br>
 
-<ins> [View Project](https://github.com/WayneNyariroh/StoreSales_Analysis/blob/main/superStoreSales_EDA.ipynb)</ins>
+<ins> [View Code](https://github.com/WayneNyariroh/StoreSales_Analysis/blob/main/superStoreSales_EDA.ipynb)</ins>
 
----
-### <ins>[3: Customer Retention: Performing a Cohort Analysis using Python](https://github.com/WayneNyariroh/customer-retention_cohortAnalysis/blob/main/RetentionAnalysis.ipynb)</ins>
+### [(B) Customer Retention: Performing a Cohort Analysis using Python](https://github.com/WayneNyariroh/customer-retention_cohortAnalysis/blob/main/RetentionAnalysis.ipynb)
 Monitoring retention metrics is critical for a business to understand lifetime customer value and to quantify the efficacy of its marketing strategy and customer service program.
 ***Customer retention is when one of your buyers purchases from you again***.<br>
 
@@ -92,7 +91,6 @@ plt.show()
 > *In the figure, Cohort Index 1 serves as the first month a customer made an order, hence the values is 100% for each cohort month. The values in the subsequent Cohort Index shows how many of the customers in that monthly cohort made a new order. i.e, in Cohort Index 2 a month after the first order, 4% of the customers who made an order in January 2015 made a new purchase with the store*<br>
 
 A business' customer retention rate compares the number of customers you have retained to your total number of customers during a certain period. You can use customer loyalty programs, customer feedback surveys, social media and additional incentives to improve your customer retention rate.<br>
->SuperStore dataset from ***Kaggle*** & it serves as a continuation of the [Exploratory Data Analysis Project](https://github.com/WayneNyariroh/StoreSales_Analysis)<br>
 > **Tools used**: jupyter lab, python, pandas, matplotlib and seaborn. <br>
 > **Activities**: Data processing, data cleaning, data querying, creating pivot tables, indexing, and vizualization. <br>
 > **Concept explored:** Cohorts and retention.<br>
@@ -100,10 +98,9 @@ A business' customer retention rate compares the number of customers you have re
 
 Clients are assigned to a cohort based on the first time they appeared in the dataset i.e, the time of first order, then their purchasing behaviour monitored over a duration. Concept of Cohorts and Retention Analysis can be extended to various organizations and institutions; a private clinic can use it to observe returning patients or monitor appointment keeping.<br>
 
-<ins>[View Project](https://github.com/WayneNyariroh/customer-retention_cohortAnalysis/blob/main/RetentionAnalysis.ipynb)</ins>
+<ins>[View Code](https://github.com/WayneNyariroh/customer-retention_cohortAnalysis/blob/main/RetentionAnalysis.ipynb)</ins>
 
----
-### <ins>[4: PowerBI Visualization Project](https://github.com/WayneNyariroh/StoreSales_PowerBI_Dashboard)</ins>
+### [(C) PowerBI Visualization Project](https://github.com/WayneNyariroh/StoreSales_PowerBI_Dashboard)
 
 ![PowerBI Dashboard](/visualization_output/DashboardScreenshot.png)
 
