@@ -39,22 +39,29 @@ for season in range(15):
             imdb_rating = episode.find(attrs={
                 'class':'ipl-rating-star__rating'}).text
 ```
+<ins>[View Scraping Code](https://github.com/WayneNyariroh/criminalmindstv_webscraping_EDA/blob/main/criminalminds-tv-data-scraping.ipynb)</ins><br>
 - Created dataframes.
 - Cleaned the data. The datasets' data types needed cleaning and convertion inorder for them to be in formats friendly to analysis and manipulation.
 - Exported the scraped and cleaned data into relevant files.
-- Did a quick Exploratory Data Analysis and Visualization.
+- Did a quick Exploratory Data Analysis and Visualization. 
 
 ![Criminal minds Analysis!](/visualization_output/cmanalysiscopy.png)<br>
 
 ![Criminal minds Analysis!](/visualization_output/cmanalysiscopy2.png)<br>
 
-<ins>[View Code](https://github.com/WayneNyariroh/criminalmindstv_webscraping_EDA/blob/main/criminalminds-tv-data-scraping.ipynb)</ins>
+<ins>[View Analysis Code and Outputs](https://github.com/WayneNyariroh/criminalmindstv_webscraping_EDA/blob/main/criminalminds-tv-data-analysis.ipynb)</ins><br>
 
 ---
-### <ins>[2: Exploratory Data Analysis & Visualization Using Python](https://github.com/WayneNyariroh/StoreSales_Analysis)</ins>
-Every business is highly dependent on its data to make better decisions for growth and success, data analysis plays an important role in helping different business entities to get an idea on their performance and any opportunities to increase gains and minimise losses. 
+### <ins>[2: Data Analysis & Visualization]</ins>
+Every business is highly dependent on its data to make better decisions for growth and success, data analysis plays an important role in helping different business entities to get an idea on their performance and any opportunities to increase gains and minimise losses. <br>
+The project is divided into three activities:<br>
+a. Exploratory Data Analysis using Python<br>
+b. Customer Retention Analysis using Python<br>
+c. PowerBI Dashboard<br>
+
+[(a) Exploratory Data Analysis](https://github.com/WayneNyariroh/StoreSales_Analysis/blob/main/superStoreSales_EDA.ipynb)
+
 The objective was to gain valuable insights on the overall performance of the Store.
-> Data was sourced from ***Kaggle***. <br>
 > **Tools used**: jupyter lab, python, pandas, numpy, matplotlib and seaborn. <br>
 > **Activities**: data cleaning, data querying and vizualization. <br>
 > **Concepts explored**: Correlation, Pivoting and Indexing, Date Manipulation. <br>
@@ -73,7 +80,7 @@ sns.heatmap(no_of_sales_table, cmap='Blues', annot=True, annot_kws={"size":11}, 
 
 <ins> [View Code](https://github.com/WayneNyariroh/StoreSales_Analysis/blob/main/superStoreSales_EDA.ipynb)</ins>
 
-### [(B) Customer Retention: Performing a Cohort Analysis using Python](https://github.com/WayneNyariroh/customer-retention_cohortAnalysis/blob/main/RetentionAnalysis.ipynb)
+### [(b) Customer Retention: Performing a Cohort Analysis using Python](https://github.com/WayneNyariroh/customer-retention_cohortAnalysis/blob/main/RetentionAnalysis.ipynb)
 Monitoring retention metrics is critical for a business to understand lifetime customer value and to quantify the efficacy of its marketing strategy and customer service program.
 ***Customer retention is when one of your buyers purchases from you again***.<br>
 
@@ -100,12 +107,13 @@ Clients are assigned to a cohort based on the first time they appeared in the da
 
 <ins>[View Code](https://github.com/WayneNyariroh/customer-retention_cohortAnalysis/blob/main/RetentionAnalysis.ipynb)</ins>
 
-### [(C) PowerBI Visualization Project](https://github.com/WayneNyariroh/StoreSales_PowerBI_Dashboard)
+### [(c) PowerBI Visualization Project](https://github.com/WayneNyariroh/StoreSales_PowerBI_Dashboard)
 
 ![PowerBI Dashboard](/visualization_output/DashboardScreenshot.png)
+> **Tools used**: Power BI
 
 A simple and user-friendly dashboard that display annotations of each value and allows filtering on the visualizations and insights based on selected values, focusing on Revenue, Number of Sales and Profit to allow interactivity.<br>
  
-<ins>[View Project](http://github.com/WayneNyariroh/StoreSales_PowerBI_Dashboard)</ins>
+<ins><a id="raw-url" href="https://raw.githubusercontent.com/WayneNyariroh/portfolio/main/Wayne_Willis_RESUME.pdf">Download Dashboard</a></ins><br>
 
 ---
