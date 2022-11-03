@@ -59,7 +59,7 @@ a. Exploratory Data Analysis using Python<br>
 b. Customer Retention Analysis using Python<br>
 c. PowerBI Dashboard<br>
 
-[(a) Exploratory Data Analysis](https://github.com/WayneNyariroh/StoreSales_Analysis/blob/main/superStoreSales_EDA.ipynb)
+#### [(a) Exploratory Data Analysis](https://github.com/WayneNyariroh/StoreSales_Analysis/blob/main/superStoreSales_EDA.ipynb)
 
 The objective was to gain valuable insights on the overall performance of the Store.
 > **Tools used**: jupyter lab, python, pandas, numpy, matplotlib and seaborn. <br>
@@ -80,7 +80,7 @@ sns.heatmap(no_of_sales_table, cmap='Blues', annot=True, annot_kws={"size":11}, 
 
 <ins> [View Code](https://github.com/WayneNyariroh/StoreSales_Analysis/blob/main/superStoreSales_EDA.ipynb)</ins>
 
-### [(b) Customer Retention: Performing a Cohort Analysis using Python](https://github.com/WayneNyariroh/customer-retention_cohortAnalysis/blob/main/RetentionAnalysis.ipynb)
+#### [(b) Customer Retention: Performing a Cohort Analysis using Python](https://github.com/WayneNyariroh/customer-retention_cohortAnalysis/blob/main/RetentionAnalysis.ipynb)
 Monitoring retention metrics is critical for a business to understand lifetime customer value and to quantify the efficacy of its marketing strategy and customer service program.
 ***Customer retention is when one of your buyers purchases from you again***.<br>
 
@@ -107,7 +107,7 @@ Clients are assigned to a cohort based on the first time they appeared in the da
 
 <ins>[View Code](https://github.com/WayneNyariroh/customer-retention_cohortAnalysis/blob/main/RetentionAnalysis.ipynb)</ins>
 
-### [(c) PowerBI Visualization Project](https://github.com/WayneNyariroh/StoreSales_PowerBI_Dashboard)
+#### [(c) PowerBI Visualization Project](https://github.com/WayneNyariroh/StoreSales_PowerBI_Dashboard)
 
 ![PowerBI Dashboard](/visualization_output/DashboardScreenshot.png)
 > **Tools used**: Power BI
