@@ -52,7 +52,7 @@ for season in range(15):
 <ins>[View Analysis Code and Outputs](https://github.com/WayneNyariroh/criminalmindstv_webscraping_EDA/blob/main/criminalminds-tv-data-analysis.ipynb)</ins><br>
 
 ---
-### <ins>[2: Data Analysis & Visualization]</ins>
+### <ins>[2: Data Analysis & Visualization](https://github.com/WayneNyariroh/StoreSales_Analysis)</ins>
 Every business is highly dependent on its data to make better decisions for growth and success, data analysis plays an important role in helping different business entities to get an idea on their performance and any opportunities to increase gains and minimise losses. <br>
 The project is divided into three activities:<br>
 a. Exploratory Data Analysis using Python<br>
