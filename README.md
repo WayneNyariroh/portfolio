@@ -1,4 +1,4 @@
-## 👨‍💻Wayne Willis, Omondi
+## 👨‍💻Omondi, Wayne Willis
 📞 ***+254768715840***, ***+254755976610***<br>
 📧***wayneaudu6@outlook.com***<br>
 📘[LinkedIn Profile](https://www.linkedin.com/in/waynewillislink/)<br>
