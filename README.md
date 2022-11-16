@@ -1,14 +1,13 @@
-## 👨‍💻Hi, I am Wayne Willis Omondi<br>
+## 👨‍💻Hi, I am Wayne Willis Omondi.<br>
+A firm believer in ___evidence-based decision-making___ - and the importance of data to drive all organizational processes - who is forward thinking and ___resourceful___. A lover of charts and numbers: passionate about all things data.
 
-A firm believer of evidence-based decision-making - and the importance of data to drive all organizational processes - who is forward thinking and resourceful. A lover of charts and numbers: passionate about all things data.
-
-## Contacts<br>
+---
+### Contacts
 📞 ***+254768715840***, ***+254755976610***<br>
 📧***wayneaudu6@outlook.com***<br>
 📘[LinkedIn Profile](https://www.linkedin.com/in/waynewillislink/)<br>
 📄<ins><a id="raw-url" href="https://raw.githubusercontent.com/WayneNyariroh/portfolio/main/Wayne_Willis_RESUME.pdf">My Resume</a></ins><br>
----
-<ins>[my weekly practice repo; because practice makes better!](https://github.com/WayneNyariroh/weekly_practice)</ins>
+
 ---
 ## Projects<br>
 ### <ins>[1: Web Scraping: Criminal Minds TV Show Data](https://github.com/WayneNyariroh/criminalmindstv_webscraping_EDA)</ins>
