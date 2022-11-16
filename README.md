@@ -1,8 +1,8 @@
-## 👨‍💻Hi, I am Wayne Willis Omondi.
+# 👨‍💻Hi, I am Wayne Willis Omondi.
 A firm believer in ___evidence-based decision-making___ - and the importance of data to drive all organizational processes - who is forward thinking and ___resourceful___. A lover of charts and numbers: passionate about all things data.
 
 ---
-### Contacts
+## Contacts
 📞 ***+254768715840***, ***+254755976610***<br>
 📧***wayneaudu6@outlook.com***<br>
 📘[LinkedIn Profile](https://www.linkedin.com/in/waynewillislink/)<br>
