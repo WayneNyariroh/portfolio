@@ -1,4 +1,4 @@
-## 👨‍💻Hi, I am Wayne Willis Omondi.<br>
+## 👨‍💻Hi, I am Wayne Willis Omondi.
 A firm believer in ___evidence-based decision-making___ - and the importance of data to drive all organizational processes - who is forward thinking and ___resourceful___. A lover of charts and numbers: passionate about all things data.
 
 ---
@@ -9,7 +9,7 @@ A firm believer in ___evidence-based decision-making___ - and the importance of 
 📄<ins><a id="raw-url" href="https://raw.githubusercontent.com/WayneNyariroh/portfolio/main/Wayne_Willis_RESUME.pdf">My Resume</a></ins><br>
 
 ---
-## Projects<br>
+## Projects
 ### <ins>[1: Web Scraping: Criminal Minds TV Show Data](https://github.com/WayneNyariroh/criminalmindstv_webscraping_EDA)</ins>
 Often the data we need for our projects, personal or professional, is not readily available. Web scraping is the process of extracting and parsing data from websites. It's a useful technique for gathering the data we need for sources online and creating our own datasets for analysis and vizualization.<br>
 <br>
