@@ -10,7 +10,7 @@ __Contacts:__<br>
 ---
 ## Projects:
 
-### <ins>[1: Web Scraping: Criminal Minds TV Show Data](https://github.com/WayneNyariroh/criminalmindstv_webscraping_EDA)</ins><br>
+### <ins>[1: Web Scraping: Criminal Minds TV Show Data](https://github.com/WayneNyariroh/criminalmindstv_webscraping_EDA)</ins>
 Often the data we need for our projects, personal or professional, is not readily available. Web scraping is the process of extracting and parsing data from websites. It's a useful technique for gathering the data we need for sources online and creating our own datasets for analysis and vizualization.<br>
 <br>
 This project came up as I was watching the most recent season of one of my all-time favorite TV shows - Criminal Minds. I was curious about how the season rates and performances compared to the previous seasons; but the data was readily available on the IMDB Movies and Series Dataset on platforms like Kaggle. I had to 'extract' the data on Criminal Minds TV show from the relevant websites.<br>
@@ -54,7 +54,7 @@ for season in range(15):
 <ins>[View Analysis Code and Outputs](https://github.com/WayneNyariroh/criminalmindstv_webscraping_EDA/blob/main/criminalminds-tv-data-analysis.ipynb)</ins><br>
 
 ---
-### <ins>[2: Data Analysis & Visualization](https://github.com/WayneNyariroh/StoreSales_Analysis)</ins>
+### <ins>[2: Data Analysis & Visualization: SuperStore Data Project](https://github.com/WayneNyariroh/StoreSales_Analysis)</ins>
 Every business is highly dependent on its data to make better decisions for growth and success, data analysis plays an important role in helping different business entities to get an idea on their performance and any opportunities to increase gains and minimise losses. <br>
 The project is divided into three activities:<br>
 _a. Exploratory Data Analysis using Python_<br>
