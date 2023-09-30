@@ -124,13 +124,14 @@ A simple mapping web app I made in September 2023, the organization I work for. 
                                                                                                                                                                             > **Tools used**: jupyter notebook, pandas, altair, streamlit and folium<br>
 > **Activites**: data cleaning, merging data from various sources, grouping and aggregations, using altair to visualize data and build an app using the streamlit library<br>
 <br>
+
 [the web app can be found here](https://wynlb-kccbssitesmap.streamlit.app/)
 
 ![app preview](/mappapp1.png) <br>
 > *Initial view when opened: collapseable sidebar on the left* <br>
 
-![app preview](/mappapp2.png) 
-<br>
+![app preview](/mappapp2.png) <br>
+> *Facility markers show facility information when clicked*
 
 ![app preview](/mappapp3.png)
 > *The dashboard tab; showing various metrics*
