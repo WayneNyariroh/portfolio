@@ -118,16 +118,19 @@ A simple and user-friendly dashboard that display annotations of each value and 
 <ins><a id="raw-url" href="https://github.com/WayneNyariroh/StoreSales_PowerBI_Dashboard/raw/main/SuperStoreDashboard.pbix">Download Dashboard</a></ins><br>
 
 ---
-### <ins>[3: Mapping and Data Visualization using Streamlit Cloud as host](https://github.com/WayneNyariroh/wynlb.kccbs_sites_map)</ins>
+### <ins>[3: Mapping and Data Visualization Web App using Streamlit Cloud as host](https://github.com/WayneNyariroh/wynlb.kccbs_sites_map)</ins>
 
-A simple mapping web app I made in September 2023, the organization I work for. It serves as a mapping of all facilities under the organization's support as well as offers key indicator data on each facility. The organization supported 105 facilities by then.<br>
-> **Tools used**: jupyter notebook, pandas, altair, streamlit and folium<br>
+A simple mapping web app I made in September 2023, the organization I work for. It serves as a mapping of all facilities under the organization's support as well as offers key indicator data on each facility. The organization supported 105 facilities by then. The facilities offer HIV testing services and Antirhetroviral Therapy with each facility having positive clients enrolled on care. For reporting purposes, facilities are divided into regions and report on KPIs on weekly and monthly basis.<br>
+                                                                                                                                                                            > **Tools used**: jupyter notebook, pandas, altair, streamlit and folium<br>
 > **Activites**: data cleaning, merging data from various sources, grouping and aggregations, using altair to visualize data and build an app using the streamlit library<br>
-[the app can be found](https://wynlb-kccbssitesmap.streamlit.app/)
 
-![app preview](mappapp1.png)
+[the web app can be found here](https://wynlb-kccbssitesmap.streamlit.app/)
 
-![app preview](mappapp2.png)
+![app preview](/mappapp1.png) <br>
+> *Initial view when opened: collapseable sidebar on the left* <br>
 
-![app preview](mappapp3.png)
+![app preview](/mappapp2.png) 
+<br>
+
+![app preview](/mappapp3.png)
 
