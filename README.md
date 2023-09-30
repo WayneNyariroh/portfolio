@@ -123,18 +123,18 @@ A simple and user-friendly dashboard that display annotations of each value and 
 A simple mapping web app I made in September 2023, the organization I work for. It serves as a mapping of all facilities under the organization's support as well as offers key indicator data on each facility. The organization supported 105 facilities by then. The facilities offer HIV testing services and Antirhetroviral Therapy with each facility having positive clients enrolled on care. For reporting purposes, facilities are divided into regions and report on KPIs on weekly and monthly basis.<br>
 <br>
 
-> **Tools used**: jupyter notebook, pandas, altair, streamlit and folium.
-> **Activites**: data cleaning, merging data from various sources, grouping and aggregations, using altair to visualize data and build an app using the streamlit library<br>
+> **Tools used**: jupyter notebook, pandas, altair, streamlit and folium.<br>
+> **Activites**: data cleaning, merging data from various sources, grouping and aggregations, using altair to visualize data and build an app using the streamlit library.<br>
 
 [the web app can be found here](https://wynlb-kccbssitesmap.streamlit.app/)
 
-![app preview1!](mappapp1.png) <br>
+![app preview1!](/visualization_output/mappapp1.png)
 > *Initial view when opened: collapseable sidebar on the left* <br>
 
-![app preview2!](mappapp2.png) <br>
+![app preview2!](/visualization_output/mappapp2.png) <br>
 > *Facility markers show facility information when clicked*
 
-![app preview3!](mappapp3.png)
+![app preview3!](/visualization_output/mappapp3.png)
 > *The dashboard tab; showing various metrics for the month of august 2023, as well as charts and datatables*
 
 The 80% of the project was getting and preparing our various datasets into something we can use for the streamlit app. Data was sourced from the 3pm NASCOP reporting platforms and the NDWH platform. Part of the process was filter to the desires implementing partner KCCB-ACTS before any further cleaning. <br>
@@ -178,3 +178,6 @@ Sample of group by used to certain answer certain questions and aid in visualiza
                   .sum()
                   .reset_index())
 ```
+![chart1!](/visualization_output/entryvisualization.png)
+
+> *bar chart showing the distribution of HIV tests done in August 2023 in the various testing entry point. PMTCT ANC, VCT and OPD contributed most to the total tests done*
