@@ -121,19 +121,18 @@ A simple and user-friendly dashboard that display annotations of each value and 
 ### <ins>[3: Mapping and Data Visualization Web App using Streamlit Cloud as host](https://github.com/WayneNyariroh/wynlb.kccbs_sites_map)</ins>
 
 A simple mapping web app I made in September 2023, the organization I work for. It serves as a mapping of all facilities under the organization's support as well as offers key indicator data on each facility. The organization supported 105 facilities by then. The facilities offer HIV testing services and Antirhetroviral Therapy with each facility having positive clients enrolled on care. For reporting purposes, facilities are divided into regions and report on KPIs on weekly and monthly basis.<br>
-                                                                                                                                                                            > **Tools used**: jupyter notebook, pandas, altair, streamlit and folium<br>
+                                                                                                                                                                            > **Tools used**: jupyter notebook, pandas, altair, streamlit and folium.
 > **Activites**: data cleaning, merging data from various sources, grouping and aggregations, using altair to visualize data and build an app using the streamlit library<br>
-<br>
 
 [the web app can be found here](https://wynlb-kccbssitesmap.streamlit.app/)
 
-![app preview](/mappapp1.png) <br>
+![app preview!](/mappapp1.png) <br>
 > *Initial view when opened: collapseable sidebar on the left* <br>
 
-![app preview](/mappapp2.png) <br>
+![app preview!](/mappapp2.png) <br>
 > *Facility markers show facility information when clicked*
 
-![app preview](/mappapp3.png)
+![app preview!](/mappapp3.png)
 > *The dashboard tab; showing various metrics*
 
 The 80% of the project was getting and preparing our various datasets into something we can use for the streamlit app. Data was sourced from the 3pm NASCOP reporting platforms and the NDWH platform. Part of the process was filter to the desires implementing partner KCCB-ACTS before any further cleaning. <br>
