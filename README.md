@@ -128,13 +128,13 @@ A simple mapping web app I made in September 2023, the organization I work for. 
 
 [the web app can be found here](https://wynlb-kccbssitesmap.streamlit.app/)
 
-![app preview1!](/visualization_output/mappapp1.png)
+![tab1!](/visualization_output/mapapp1.png)
 > *Initial view when opened: collapseable sidebar on the left* <br>
 
-![app preview2!](/visualization_output/mappapp2.png) <br>
+![tab12!](/visualization_output/mapapp2.png) <br>
 > *Facility markers show facility information when clicked*
 
-![app preview3!](/visualization_output/mappapp3.png)
+![tab2!](/visualization_output/mapapp3.png)
 > *The dashboard tab; showing various metrics for the month of august 2023, as well as charts and datatables*
 
 The 80% of the project was getting and preparing our various datasets into something we can use for the streamlit app. Data was sourced from the 3pm NASCOP reporting platforms and the NDWH platform. Part of the process was filter to the desires implementing partner KCCB-ACTS before any further cleaning. <br>
