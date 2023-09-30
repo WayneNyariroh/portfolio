@@ -123,7 +123,7 @@ A simple and user-friendly dashboard that display annotations of each value and 
 A simple mapping web app I made in September 2023, the organization I work for. It serves as a mapping of all facilities under the organization's support as well as offers key indicator data on each facility. The organization supported 105 facilities by then. The facilities offer HIV testing services and Antirhetroviral Therapy with each facility having positive clients enrolled on care. For reporting purposes, facilities are divided into regions and report on KPIs on weekly and monthly basis.<br>
                                                                                                                                                                             > **Tools used**: jupyter notebook, pandas, altair, streamlit and folium<br>
 > **Activites**: data cleaning, merging data from various sources, grouping and aggregations, using altair to visualize data and build an app using the streamlit library<br>
-
+<br>
 [the web app can be found here](https://wynlb-kccbssitesmap.streamlit.app/)
 
 ![app preview](/mappapp1.png) <br>
@@ -133,4 +133,46 @@ A simple mapping web app I made in September 2023, the organization I work for. 
 <br>
 
 ![app preview](/mappapp3.png)
+> *The dashboard tab; showing various metrics*
 
+The 80% of the project was getting and preparing our various datasets into something we can use for the streamlit app. Data was sourced from the 3pm NASCOP reporting platforms and the NDWH platform. Part of the process was filter to the desires implementing partner KCCB-ACTS before any further cleaning. <br>
+
+```python
+#the implementing sdp to filter
+partner_filter = 'KCCB ACTS'
+
+#@allows us to pass our string variable through the query method. we also use method chaining to do addition manipulations on the resulting data.
+kccb_sites = site_data.query('SDP == @partner_filter').reset_index().drop(['index'], axis=1)
+kccb_sites.head(4)
+```
+Since the data needed was in various files, merging the various datasets came next after cleaning. <br>
+
+```python
+#renaming the mfl column in the second df
+kccbtxdata.rename(columns={'mfl':'mfl_code'}, inplace=True)
+
+#merging the two dataframe where mfl_code is same
+#and saving the resulting dataframe as a new dataframe to merge with the next dataset. use to_excel('dir/filename') to save it
+tx_coords = (pd.
+ merge(kccbtxdata, kccb_sites,
+      on=['mfl_code'], how='left'))
+```
+Certain counties had region column as NaN after the merge, so region value needed to be filled based on their assigned region of operation. <br>
+
+```python
+#rows containing the specific string as a filter
+nairobi_region = kccbsites_df.County.str.contains("Nairobi|Narok|Nyeri|Kirinyaga|Murang'a|Kiambu|Nakuru|Kajiado")
+mombasa_region = kccbsites_df.County.str.contains("Taita Taveta|Mombasa|Kilifi")
+
+#use loc to take our filters in to fill in the nan values in regions
+kccbsites_df.loc[nairobi_region, 'region'] = kccbsites_df.loc[nairobi_region, 'region'].fillna(value='Nairobi')
+kccbsites_df.loc[mombasa_region, 'region'] = kccbsites_df.loc[mombasa_region, 'region'].fillna(value='Mombasa')
+```
+Sample of group by used to certain answer certain questions and aid in visualizations. <br>
+
+```python
+(prepd_data.groupby(
+         by=['county'])[['txnew2023Q1','txnew2023Q2','txnew2023Q3','txnew2023Q4']]
+                  .sum()
+                  .reset_index())
+```
