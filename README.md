@@ -1,6 +1,14 @@
 # 👨‍💻Hi, I am Wayne Willis Omondi.
 A firm believer in ___evidence-based decision-making___ - and the importance of data to drive all organizational processes - who is forward thinking and ___resourceful___. A lover of charts and numbers: passionate about all things data.<br>
 <br>
+## Skills
+> Python programming language, specifically its libraries for data visualization (matplotlib, seaborn, altair and Plotly), data manipulation (Pandas and NumPy) and web apps (Streamlit and Dash).<br>
+> Data Visualization tools such as PowerBI.<br>
+> Proficient in Windows and Linux systems - Microsoft Office packages and Linux LibreOffice packages.<br>
+> Database Management Systems and relational database query language (SQL).<br>
+> Version Control (Git and GitHub).<br>
+> Electronic Medical Records and Health Management Information Systems predominantly KenyaEMR and IQ Care.<br>
+
 __Contacts:__<br>
 📞 ***+254768715840***, ***+254755976610***<br>
 📧***wayneaudu6@outlook.com***<br>
