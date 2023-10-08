@@ -124,6 +124,8 @@ for season in range(15):
 
 ![Criminal minds Analysis!](/visualization_output/cmanalysiscopy2.png)<br>
 
+![Criminal minds Analysis!](/visualization_output/download.png)<br>
+
 <ins>[View Analysis Code and Outputs](https://github.com/WayneNyariroh/criminalmindstv_webscraping_EDA/blob/main/criminalminds-tv-data-analysis.ipynb)</ins><br>
 
 ---
