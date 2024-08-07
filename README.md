@@ -17,8 +17,54 @@ __Contacts:__<br>
 
 ---
 ## Projects:
+### <ins>[1: Dashboard: Criminal Minds TV Show Data](https://wayne-vl-analyst-t52z5xg64a-bq.a.run.app/)</ins>
+Often the data we need for our projects, personal or professional, is not readily available. Web scraping is the process of extracting and parsing data from websites. It's a useful technique for gathering the data we need for sources online and creating our own datasets for analysis and vizualization.<br>
+<br>
+This project came up as I was watching the most recent season of one of my all-time favorite TV shows - Criminal Minds. I was curious about how the season rates and performances compared to the previous seasons; but the data was readily available on the IMDB Movies and Series Dataset on platforms like Kaggle. I had to 'extract' the data on Criminal Minds TV show from the relevant websites.<br>
 
-### <ins>[1: Mapping and Data Visualization Web App using Streamlit Cloud as host](https://github.com/WayneNyariroh/wynlb.kccbs_sites_map)</ins>
+> **Libraries used**: pandas, openpyxl, numpy, dateutil and datetime <br>
+> **Activites**: data cleaning, merging data from various sources, grouping and aggregations, using altair to visualize data and build an app using the streamlit library.<br>
+
+Procedure:
+- _Used read_html() method where html data is in tables .i.e., the wikitables in Wikipedia._
+- _Used requests library to 'get' the IMBD web page(s) locally._
+- _Inspected HTML source on my browser to see the relevant tags that contained the information I needed._
+- _Used BeautifulSoup to parse (break into components) and extract relevant information. Considering the show had 15 seasons, for loop was necessary to extract information from each season. As show in the code snippet below._
+
+```python
+for season in range(15):
+    season_number = season + 1
+    imdb_url = f'https://www.imdb.com/title/tt0452046/episodes?season={season_number}' 
+    imdb_response = get(imdb_url)
+    season_html = BeautifulSoup(imdb_response.content)
+    season_info = season_html.findAll('div', attrs={
+        'class':'info'})
+        
+    for episode_number, episode in enumerate(season_info):
+            episode_name = episode.strong.a.text       
+            episode_description = episode.find(attrs={
+                'class':'item_description'}).text.strip()
+            episode_airdate = episode.find(attrs={
+                'class':'airdate'}).text.strip()
+            imdb_rating = episode.find(attrs={
+                'class':'ipl-rating-star__rating'}).text
+```
+<ins>[View Scraping Code](https://github.com/WayneNyariroh/criminalmindstv_webscraping_EDA/blob/main/criminalminds-tv-data-scraping.ipynb)</ins><br>
+- _Created dataframes._
+- _Cleaned the data. The datasets' data types needed cleaning and convertion inorder for them to be in formats friendly to analysis and manipulation._
+- _Exported the scraped and cleaned data into relevant files._
+- _Did a quick Exploratory Data Analysis and Visualization._
+
+![Criminal minds Analysis!](/visualization_output/cmanalysiscopy.png)<br>
+
+![Criminal minds Analysis!](/visualization_output/cmanalysiscopy2.png)<br>
+
+![Criminal minds Analysis!](/visualization_output/download.png)<br>
+
+<ins>[View Analysis Code and Outputs](https://github.com/WayneNyariroh/criminalmindstv_webscraping_EDA/blob/main/criminalminds-tv-data-analysis.ipynb)</ins><br>
+
+---
+### <ins>[2: Mapping and Data Visualization Web App using Streamlit Cloud as host](https://github.com/WayneNyariroh/wynlb.kccbs_sites_map)</ins>
 
 A simple mapping web app I made in September 2023, the organization I work for as a Data Manager. It serves as a mapping of all facilities under the organization's support as well as offers key indicator data on each facility. The organization supported 105 facilities by then. The facilities offer HIV testing services and Antirhetroviral Therapy with each facility having positive clients enrolled on care. For reporting purposes, facilities are divided into regions and report on KPIs on weekly and monthly basis.<br>
 <br>
@@ -83,7 +129,7 @@ Sample of group by used to certain answer certain questions and aid in visualiza
 > *bar chart showing the distribution of HIV tests done in August 2023 in the various testing entry point. PMTCT ANC, VCT and OPD contributed most to the total tests done*
 
 ---
-### <ins>[2: Web Scraping: Criminal Minds TV Show Data](https://github.com/WayneNyariroh/criminalmindstv_webscraping_EDA)</ins>
+### <ins>[3: Web Scraping: Criminal Minds TV Show Data](https://github.com/WayneNyariroh/criminalmindstv_webscraping_EDA)</ins>
 Often the data we need for our projects, personal or professional, is not readily available. Web scraping is the process of extracting and parsing data from websites. It's a useful technique for gathering the data we need for sources online and creating our own datasets for analysis and vizualization.<br>
 <br>
 This project came up as I was watching the most recent season of one of my all-time favorite TV shows - Criminal Minds. I was curious about how the season rates and performances compared to the previous seasons; but the data was readily available on the IMDB Movies and Series Dataset on platforms like Kaggle. I had to 'extract' the data on Criminal Minds TV show from the relevant websites.<br>
@@ -129,7 +175,7 @@ for season in range(15):
 <ins>[View Analysis Code and Outputs](https://github.com/WayneNyariroh/criminalmindstv_webscraping_EDA/blob/main/criminalminds-tv-data-analysis.ipynb)</ins><br>
 
 ---
-### <ins>[3: Data Analysis & Visualization: SuperStore Data Project](https://github.com/WayneNyariroh/StoreSales_Analysis)</ins>
+### <ins>[4: Data Analysis & Visualization: SuperStore Data Project](https://github.com/WayneNyariroh/StoreSales_Analysis)</ins>
 Every business is highly dependent on its data to make better decisions for growth and success, data analysis plays an important role in helping different business entities to get an idea on their performance and any opportunities to increase gains and minimise losses. <br>
 The project is divided into three activities:<br>
 _a. Exploratory Data Analysis using Python_<br>
