@@ -20,20 +20,21 @@ __Contacts:__<br>
 ### <ins>[1: Viral Load (VL) Indicator Dashboard: Automating my Workflow (2024)](https://wayne-vl-analyst-t52z5xg64a-bq.a.run.app/)</ins>
 Often at work we all have daily tasks that are repetitive in nature; this project was meant to assist me automate one such task in a more accurate and faster way and also share the app's benefits with my colleagues.<br>
 <br>
-Part of my job at KCCB-ACTs, as a Data Manager, is keeping the clinical team upodated on the HIV-positive clients who are due to have the viral load tested. Such clients are considered to have Invalid VLs.<br>
+Part of my job at KCCB-ACTs, as a Data Manager, is keeping the clinical team upodated on the HIV-positive clients who are due to have the viral load tested. Such clients are considered to have Invalid VLs. Part of the logic is as follows: those on antiretroviral therapy for a period less than 3 months considered 'not elligible' for vl uptake. those 0 t0 24 years as well as pmtct; vl is taken on 6 month-basis; and 25 years+ on a 12 month-basis.<br>
 
 > **Libraries used**: pandas, openpyxl, numpy, dateutil and datetime, streamlit, plotly, altair <br>
-> **Activites**: problem definition, approach planning, data cleaning, merging data from various sources, dataset grouping and aggregations, using altair & plotly to visualize data and build an app using the streamlit library. Deploy finished app on GoogleCloud Platform<br>
+> **Activites**: problem definition, approach planning, data cleaning, merging data from various sources, dataset grouping and aggregations, using altair & plotly to visualize data and build an app using the streamlit library. Deploy finished app on GoogleCloud Platform.<br>
 
 Procedure:
 - _Desiging the basic structure of the app through streamlit. Allow upload of files to be analysed._
-- _Using various pandas libraries and modules to implement the app's logic to answer the following questions: Who is elligible for viral load uptake? what is a valid viral load? which results are suppressed? How does age group and patient category affect the previous questions? What is a cohor?._
+- _Using various pandas libraries and modules to implement the app's logic to answer the following questions: Who is elligible for viral load uptake? what is a valid viral load? which results are suppressed? How does age group and patient category affect the previous questions? What is a cohort?._
 - _Placing dashboard metrics to show summaries plus explanations for each. Shadcn-ui extension for streamlit helped with the metric cards._
 - _How users to define the data they want by including a slider and an interactive dataframe. Allow users to download all the data results though .to_csv()_
-- _Cohort analysis visualization with a simple heatmap_
-- _Host app on GoogleCLoud Platform_
+- _Cohort analysis visualization with a simple heatmap._
+- _Host app on GoogleCLoud Platform._
 
 ![vl-app!](/vl-site/Screenshot%20from%202024-08-07%2011-01-22.png)<br>
+The VL uptake uses Altair's Faceted charts to provide multiple views of a dataset through different panels for different subsets of data column i.e., age_category. Same stacked bar chart output is 'repeated' for each unique item in the age_category column.
 ```python
 with st.container(border=True):
             summary_chart = alt.Chart(pivot_linelist).mark_bar(cornerRadiusTopLeft=4,cornerRadiusTopRight=4).encode(
@@ -64,7 +65,7 @@ with st.container(border=True):
 ```
 
 ![vl-app-interactivity!](/vl-site/Screenshot%20from%202024-08-07%2011-01-46.png)<br>
-
+<br>
 ![vl-app-heatmap!](vl-site/Screenshot%20from%202024-08-07%2011-02-39.png)<br>
 A **cohort** is a group of subjects that share a defining characteristic and a cohort has three main attributes: **_time_**, **_size_** and **_behaviour_**. This heatmap represents all HIV-positive clients, actively on care, who started antiretroviral therapy on the same month of the same year. Values represented in terms of percentages of those suppressed i.e., **_the percentage of ART patients within the cohort with a valid documented viral load (VL) result that is below <200 copies/ml._**")
 
