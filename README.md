@@ -36,32 +36,23 @@ Procedure:
 ![vl-app!](/vl-site/Screenshot%20from%202024-08-07%2011-01-22.png)<br>
 The VL uptake uses Altair's Faceted charts to provide multiple views of a dataset through different panels for different subsets of data column i.e., age_category. Same stacked bar chart output is 'repeated' for each unique item in the age_category column.
 ```python
-with st.container(border=True):
-            summary_chart = alt.Chart(pivot_linelist).mark_bar(cornerRadiusTopLeft=4,cornerRadiusTopRight=4).encode(
-                alt.X('validity', title=""), alt.Y('count()', title=""),
-                alt.Color('sex:O', scale=alt.Scale(scheme='greens'),legend=alt.Legend(orient="top", title="")))
+summary_chart = alt.Chart(pivot_linelist).mark_bar(cornerRadiusTopLeft=4,cornerRadiusTopRight=4).encode(alt.X('validity', title=""), alt.Y('count()', title=""),alt.Color('sex:O',scale=alt.Scale(scheme='greens'),legend=alt.Legend(orient="top", title="")))
             
-            text_chart = alt.Chart(pivot_linelist).mark_text(
-                align="center", baseline="middle",dx=1, dy=-7,fontSize=10).encode(
-                text="count()", x='validity', y='count()')
+text_chart = alt.Chart(pivot_linelist).mark_text(align="center", baseline="middle",dx=1, dy=-7,fontSize=10).encode(text="count()", x='validity', y='count()')
             
-            chart = (summary_chart + text_chart).facet(column='age_category',
-                        title=alt.Title("vl uptake summary based on defined age categories and sex", color="green",
-                        subtitle="viral load status for all clients currently on antirhetroviral therapy.",
-                        subtitleColor="grey")).configure_header(title=None)
+chart = (summary_chart + text_chart).facet(column='age_category', title=alt.Title("vl uptake summary based on defined age categories and sex", color="green", subtitle="viral load status for all clients currently on antirhetroviral therapy.", subtitleColor="grey")).configure_header(title=None)
             
-            st.altair_chart(chart, use_container_width=True)
-            st.write(f'**:green[vl uptake:]** {(np.round(full_valid_df.shape[0]/elligible_df.shape[0], decimals=2)*100)}' + "%")
+st.altair_chart(chart, use_container_width=True)
+st.write(f'**:green[vl uptake:]** {(np.round(full_valid_df.shape[0]/elligible_df.shape[0], decimals=2)*100)}' + "%")
 
-with st.container(border=True):
-            validsumtable = pivot_linelist[pivot_linelist.validity.eq('valid')]
-            summarytable = validsumtable.groupby(['age_category','vl_category']).agg(total=('ccc_no','count'))
-            summarytable.index.names = ['group','status']
-            vlsum = summarytable.reset_index()
+validsumtable = pivot_linelist[pivot_linelist.validity.eq('valid')]
+summarytable = validsumtable.groupby(['age_category','vl_category']).agg(total=('ccc_no','count'))
+summarytable.index.names = ['group','status']
+vlsum = summarytable.reset_index()
 
-            st.caption("**suppression status for all valid clients based on 200copies/ml cuttoff grouped based on age categories.**")
-            ui.table(vlsum)
-            st.write(f'**:green[suppression rate:]** {(np.round(suppressedtable.shape[0]/validtable.shape[0], decimals=2)*100)}' + "%")
+st.caption("**suppression status for all valid clients based on 200copies/ml cuttoff grouped based on age categories.**")
+ui.table(vlsum)
+st.write(f'**:green[suppression rate:]** {(np.round(suppressedtable.shape[0]/validtable.shape[0], decimals=2)*100)}' + "%")
 ```
 
 ![vl-app-interactivity!](/vl-site/Screenshot%20from%202024-08-07%2011-01-46.png)<br>
