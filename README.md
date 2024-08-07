@@ -70,14 +70,14 @@ with st.container(border=True):
 A **cohort** is a group of subjects that share a defining characteristic and a cohort has three main attributes: **_time_**, **_size_** and **_behaviour_**. This heatmap represents all HIV-positive clients, actively on care, who started antiretroviral therapy on the same month of the same year. Values represented in terms of percentages of those suppressed i.e., **_the percentage of ART patients within the cohort with a valid documented viral load (VL) result that is below <200 copies/ml._**")
 
 ```python
-        cohortsuppression = cohortsuppressed.div(cohortvalid)
-        cohortsuppression.columns = cohortsuppression.columns.droplevel(0)
-        cohortsuppression.columns.name = None
-        cohortperc = cohortsuppression.apply(lambda x: x * 100)
-        cohortperc = cohortperc.round(2)
+cohortsuppression = cohortsuppressed.div(cohortvalid)
+cohortsuppression.columns = cohortsuppression.columns.droplevel(0)
+cohortsuppression.columns.name = None
+cohortperc = cohortsuppression.apply(lambda x: x * 100)
+cohortperc = cohortperc.round(2)
 
-        fig = px.imshow(artcohort, text_auto=True, color_continuous_scale='greens',
-                            contrast_rescaling='infer', aspect='auto')
+fig = px.imshow(artcohort, text_auto=True, color_continuous_scale='greens',
+                contrast_rescaling='infer', aspect='auto')
 ```
 ---
 ### <ins>[2: Mapping and Data Visualization Web App using Streamlit Cloud as host (2023)](https://github.com/WayneNyariroh/wynlb.kccbs_sites_map)</ins>
