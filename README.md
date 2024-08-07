@@ -17,54 +17,68 @@ __Contacts:__<br>
 
 ---
 ## Projects:
-### <ins>[1: Dashboard: Criminal Minds TV Show Data](https://wayne-vl-analyst-t52z5xg64a-bq.a.run.app/)</ins>
-Often the data we need for our projects, personal or professional, is not readily available. Web scraping is the process of extracting and parsing data from websites. It's a useful technique for gathering the data we need for sources online and creating our own datasets for analysis and vizualization.<br>
+### <ins>[1: Viral Load (VL) Indicator Dashboard: Automating my Workflow (2024)](https://wayne-vl-analyst-t52z5xg64a-bq.a.run.app/)</ins>
+Often at work we all have daily tasks that are repetitive in nature; this project was meant to assist me automate one such task in a more accurate and faster way and also share the app's benefits with my colleagues.<br>
 <br>
-This project came up as I was watching the most recent season of one of my all-time favorite TV shows - Criminal Minds. I was curious about how the season rates and performances compared to the previous seasons; but the data was readily available on the IMDB Movies and Series Dataset on platforms like Kaggle. I had to 'extract' the data on Criminal Minds TV show from the relevant websites.<br>
+Part of my job at KCCB-ACTs, as a Data Manager, is keeping the clinical team upodated on the HIV-positive clients who are due to have the viral load tested. Such clients are considered to have Invalid VLs.<br>
 
-> **Libraries used**: pandas, openpyxl, numpy, dateutil and datetime <br>
-> **Activites**: data cleaning, merging data from various sources, grouping and aggregations, using altair to visualize data and build an app using the streamlit library.<br>
+> **Libraries used**: pandas, openpyxl, numpy, dateutil and datetime, streamlit, plotly, altair <br>
+> **Activites**: problem definition, approach planning, data cleaning, merging data from various sources, dataset grouping and aggregations, using altair & plotly to visualize data and build an app using the streamlit library. Deploy finished app on GoogleCloud Platform<br>
 
 Procedure:
-- _Used read_html() method where html data is in tables .i.e., the wikitables in Wikipedia._
-- _Used requests library to 'get' the IMBD web page(s) locally._
-- _Inspected HTML source on my browser to see the relevant tags that contained the information I needed._
-- _Used BeautifulSoup to parse (break into components) and extract relevant information. Considering the show had 15 seasons, for loop was necessary to extract information from each season. As show in the code snippet below._
+- _Desiging the basic structure of the app through streamlit. Allow upload of files to be analysed._
+- _Using various pandas libraries and modules to implement the app's logic to answer the following questions: Who is elligible for viral load uptake? what is a valid viral load? which results are suppressed? How does age group and patient category affect the previous questions? What is a cohor?._
+- _Placing dashboard metrics to show summaries plus explanations for each. Shadcn-ui extension for streamlit helped with the metric cards._
+- _How users to define the data they want by including a slider and an interactive dataframe. Allow users to download all the data results though .to_csv()_
+- _Cohort analysis visualization with a simple heatmap_
+- _Host app on GoogleCLoud Platform_
 
+![vl-app!](/vl-site/Screenshot%20from%202024-08-07%2011-01-22.png)<br>
 ```python
-for season in range(15):
-    season_number = season + 1
-    imdb_url = f'https://www.imdb.com/title/tt0452046/episodes?season={season_number}' 
-    imdb_response = get(imdb_url)
-    season_html = BeautifulSoup(imdb_response.content)
-    season_info = season_html.findAll('div', attrs={
-        'class':'info'})
-        
-    for episode_number, episode in enumerate(season_info):
-            episode_name = episode.strong.a.text       
-            episode_description = episode.find(attrs={
-                'class':'item_description'}).text.strip()
-            episode_airdate = episode.find(attrs={
-                'class':'airdate'}).text.strip()
-            imdb_rating = episode.find(attrs={
-                'class':'ipl-rating-star__rating'}).text
+with st.container(border=True):
+            summary_chart = alt.Chart(pivot_linelist).mark_bar(cornerRadiusTopLeft=4,cornerRadiusTopRight=4).encode(
+                alt.X('validity', title=""), alt.Y('count()', title=""),
+                alt.Color('sex:O', scale=alt.Scale(scheme='greens'),legend=alt.Legend(orient="top", title=""))).properties(width=110, height=250)
+            
+            text_chart = alt.Chart(pivot_linelist).mark_text(
+                align="center", baseline="middle",dx=1, dy=-7,fontSize=10).encode(
+                text="count()", x='validity', y='count()')
+            
+            chart = (summary_chart + text_chart).facet(
+                column='age_category', title=alt.Title("vl uptake summary based on defined age categories and sex", color="green",
+                subtitle="viral load status for all clients currently on antirhetroviral therapy.",
+                subtitleColor="grey")).configure_header(title=None)
+            
+            st.altair_chart(chart, use_container_width=True)
+            st.write(f'**:green[vl uptake:]** {(np.round(full_valid_df.shape[0]/elligible_df.shape[0], decimals=2)*100)}' + "%")
+            
+    with vltable:
+        with st.container(border=True):
+            validsumtable = pivot_linelist[pivot_linelist.validity.eq('valid')]
+            summarytable = validsumtable.groupby(
+                ['age_category','vl_category']).agg(total=('ccc_no','count'))
+            summarytable.index.names = ['group','status']
+            vlsum = summarytable.reset_index()
+            st.caption("**suppression status for all valid clients based on 200copies/ml cuttoff grouped based on age categories.**")
+            ui.table(vlsum)
+            st.write(f'**:green[suppression rate:]** {(np.round(suppressedtable.shape[0]/validtable.shape[0], decimals=2)*100)}' + "%")
 ```
-<ins>[View Scraping Code](https://github.com/WayneNyariroh/criminalmindstv_webscraping_EDA/blob/main/criminalminds-tv-data-scraping.ipynb)</ins><br>
-- _Created dataframes._
-- _Cleaned the data. The datasets' data types needed cleaning and convertion inorder for them to be in formats friendly to analysis and manipulation._
-- _Exported the scraped and cleaned data into relevant files._
-- _Did a quick Exploratory Data Analysis and Visualization._
 
-![Criminal minds Analysis!](/visualization_output/cmanalysiscopy.png)<br>
+![vl-app-interactivity!](/vl-site/Screenshot%20from%202024-08-07%2011-01-46.png)<br>
 
-![Criminal minds Analysis!](/visualization_output/cmanalysiscopy2.png)<br>
+![vl-app-heatmap!](vl-site/Screenshot%20from%202024-08-07%2011-02-39.png)<br>
+```python
+        cohortsuppression = cohortsuppressed.div(cohortvalid)
+        cohortsuppression.columns = cohortsuppression.columns.droplevel(0)
+        cohortsuppression.columns.name = None
+        cohortperc = cohortsuppression.apply(lambda x: x * 100)
+        cohortperc = cohortperc.round(2)
 
-![Criminal minds Analysis!](/visualization_output/download.png)<br>
-
-<ins>[View Analysis Code and Outputs](https://github.com/WayneNyariroh/criminalmindstv_webscraping_EDA/blob/main/criminalminds-tv-data-analysis.ipynb)</ins><br>
-
+        fig = px.imshow(artcohort, text_auto=True, color_continuous_scale='greens',
+                            contrast_rescaling='infer', aspect='auto')
+```
 ---
-### <ins>[2: Mapping and Data Visualization Web App using Streamlit Cloud as host](https://github.com/WayneNyariroh/wynlb.kccbs_sites_map)</ins>
+### <ins>[2: Mapping and Data Visualization Web App using Streamlit Cloud as host (2023)](https://github.com/WayneNyariroh/wynlb.kccbs_sites_map)</ins>
 
 A simple mapping web app I made in September 2023, the organization I work for as a Data Manager. It serves as a mapping of all facilities under the organization's support as well as offers key indicator data on each facility. The organization supported 105 facilities by then. The facilities offer HIV testing services and Antirhetroviral Therapy with each facility having positive clients enrolled on care. For reporting purposes, facilities are divided into regions and report on KPIs on weekly and monthly basis.<br>
 <br>
