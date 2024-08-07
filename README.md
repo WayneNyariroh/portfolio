@@ -38,27 +38,26 @@ Procedure:
 with st.container(border=True):
             summary_chart = alt.Chart(pivot_linelist).mark_bar(cornerRadiusTopLeft=4,cornerRadiusTopRight=4).encode(
                 alt.X('validity', title=""), alt.Y('count()', title=""),
-                alt.Color('sex:O', scale=alt.Scale(scheme='greens'),legend=alt.Legend(orient="top", title=""))).properties(width=110, height=250)
+                alt.Color('sex:O', scale=alt.Scale(scheme='greens'),legend=alt.Legend(orient="top", title="")))
             
             text_chart = alt.Chart(pivot_linelist).mark_text(
                 align="center", baseline="middle",dx=1, dy=-7,fontSize=10).encode(
                 text="count()", x='validity', y='count()')
             
-            chart = (summary_chart + text_chart).facet(
-                column='age_category', title=alt.Title("vl uptake summary based on defined age categories and sex", color="green",
-                subtitle="viral load status for all clients currently on antirhetroviral therapy.",
-                subtitleColor="grey")).configure_header(title=None)
+            chart = (summary_chart + text_chart).facet(column='age_category',
+                        title=alt.Title("vl uptake summary based on defined age categories and sex", color="green",
+                        subtitle="viral load status for all clients currently on antirhetroviral therapy.",
+                        subtitleColor="grey")).configure_header(title=None)
             
             st.altair_chart(chart, use_container_width=True)
             st.write(f'**:green[vl uptake:]** {(np.round(full_valid_df.shape[0]/elligible_df.shape[0], decimals=2)*100)}' + "%")
-            
-    with vltable:
-        with st.container(border=True):
+
+with st.container(border=True):
             validsumtable = pivot_linelist[pivot_linelist.validity.eq('valid')]
-            summarytable = validsumtable.groupby(
-                ['age_category','vl_category']).agg(total=('ccc_no','count'))
+            summarytable = validsumtable.groupby(['age_category','vl_category']).agg(total=('ccc_no','count'))
             summarytable.index.names = ['group','status']
             vlsum = summarytable.reset_index()
+
             st.caption("**suppression status for all valid clients based on 200copies/ml cuttoff grouped based on age categories.**")
             ui.table(vlsum)
             st.write(f'**:green[suppression rate:]** {(np.round(suppressedtable.shape[0]/validtable.shape[0], decimals=2)*100)}' + "%")
@@ -67,6 +66,8 @@ with st.container(border=True):
 ![vl-app-interactivity!](/vl-site/Screenshot%20from%202024-08-07%2011-01-46.png)<br>
 
 ![vl-app-heatmap!](vl-site/Screenshot%20from%202024-08-07%2011-02-39.png)<br>
+A **cohort** is a group of subjects that share a defining characteristic and a cohort has three main attributes: **_time_**, **_size_** and **_behaviour_**. This heatmap represents all HIV-positive clients, actively on care, who started antiretroviral therapy on the same month of the same year. Values represented in terms of percentages of those suppressed i.e., **_the percentage of ART patients within the cohort with a valid documented viral load (VL) result that is below <200 copies/ml._**")
+
 ```python
         cohortsuppression = cohortsuppressed.div(cohortvalid)
         cohortsuppression.columns = cohortsuppression.columns.droplevel(0)
