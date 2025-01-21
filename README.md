@@ -1,4 +1,4 @@
-# 👨‍💻Hi, I am Wayne Willis Omondi.
+# 👨‍💻Hello, I am Omondi Wayne Willis.
 A firm believer in ___evidence-based decision-making___ - and the importance of data to drive all organizational processes - who is forward thinking and ___resourceful___. A lover of charts and numbers: passionate about all things data.<br>
 <br>
 ## Skills
