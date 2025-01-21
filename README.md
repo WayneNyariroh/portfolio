@@ -10,7 +10,7 @@ A firm believer in ___evidence-based decision-making___ - and the importance of 
 > Electronic Medical Records and Health Management Information Systems predominantly KenyaEMR and IQ Care.<br>
 
 __Contacts:__<br>
-📞 ***+254768715840***, ***+254755976610***<br>
+📞  ***+254755976610***, ***+254768715840***<br>
 📧***wayneaudu6@outlook.com***<br>
 📘[LinkedIn Profile](https://www.linkedin.com/in/waynewillislink/)<br>
 📄<ins><a id="raw-url" href="https://raw.githubusercontent.com/WayneNyariroh/portfolio/main/Wayne_O_Willis_RESUME.pdf">My Resume</a></ins><br>
