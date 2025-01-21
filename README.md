@@ -17,7 +17,7 @@ __Contacts:__<br>
 
 ---
 ## Projects:
-### <ins>[1: Viral Load (VL) Indicator Dashboard: Automating my Workflow (2024)](https://wayne-vl-analyst-t52z5xg64a-bq.a.run.app/)</ins>
+### <ins>[1: Viral Load (VL) Indicator Dashboard: Automating my Workflow (2024)](https://wynlbs-vl-analysis-site.streamlit.app/)</ins>
 Often at work we all have daily tasks that are repetitive in nature; this project was meant to assist me automate one such task in a more accurate and faster way and also share the app's benefits with my colleagues.<br>
 <br>
 Part of my job at KCCB-ACTs, as a Data Manager, is keeping the clinical team upodated on the HIV-positive clients who are due to have the viral load tested. Such clients are considered to have Invalid VLs. Part of the logic is as follows: those on antiretroviral therapy for a period less than 3 months considered 'not elligible' for vl uptake. those 0 t0 24 years as well as pmtct; vl is taken on 6 month-basis; and 25 years+ on a 12 month-basis.<br>
