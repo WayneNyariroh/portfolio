@@ -1,5 +1,5 @@
 # 👨‍💻Hello, I am Omondi Wayne Willis.
-A firm believer in ___evidence-based decision-making___ - and the importance of data to drive all organizational processes - who is forward thinking and ___resourceful___. A lover of charts and numbers: passionate about all things data.<br>
+A firm believer in ___evidence-based decision-making___ - and the importance of data to drive all organizational processes - who is forward thinking and ___resourceful___. A lover of charts and numbers: passionate about all things data, its forms and all the processes involved in turning it into useful insights.<br>
 <br>
 ## Skills
 > Python programming language, specifically its libraries for data visualization (matplotlib, seaborn, altair and Plotly), data manipulation (Pandas and NumPy) and web apps (Streamlit and Dash).<br>
