@@ -6,10 +6,11 @@ A firm believer in ___evidence-based decision-making___ - and the importance of 
 ## Skills
 > Python programming language, specifically its libraries for data visualization (matplotlib, seaborn, altair and Plotly), data manipulation (Pandas and NumPy) and web apps (Streamlit and Dash).<br>
 > Data Visualization tools such as PowerBI.<br>
+> Electronic Medical Records and Health Management Information Systems predominantly KenyaEMR and IQ Care.<br>
+> Data Analysis through DHIS2.<br>
 > Proficient in Windows and Linux systems - Microsoft Office packages and Linux LibreOffice packages.<br>
 > Database Management Systems and relational database query language (SQL).<br>
 > Version Control (Git and GitHub).<br>
-> Electronic Medical Records and Health Management Information Systems predominantly KenyaEMR and IQ Care.<br>
 
 __Contacts:__<br>
 📞  ***+254755976610***, ***+254768715840***<br>
