@@ -36,7 +36,8 @@ Procedure:
 - _Cohort analysis visualization with a simple heatmap._
 - _Host app on GoogleCLoud Platform._
 
-![vl-app!](/vl-site/Screenshot%20from%202024-08-07%2011-01-22.png)<br>
+![vl-app!]( /vl-site/Screenshot%20from%202024-08-07%2011-01-22.png)<br>
+
 The VL uptake uses Altair's Faceted charts to provide multiple views of a dataset through different panels for different subsets of data column i.e., age_category. Same stacked bar chart output is 'repeated' for each unique item in the age_category column.
 ```python
 summary_chart = alt.Chart(pivot_linelist).mark_bar(cornerRadiusTopLeft=4,cornerRadiusTopRight=4).encode(alt.X('validity', title=""), alt.Y('count()', title=""),alt.Color('sex:O',scale=alt.Scale(scheme='greens'),legend=alt.Legend(orient="top", title="")))
@@ -58,7 +59,7 @@ ui.table(vlsum)
 st.write(f'**:green[suppression rate:]** {(np.round(suppressedtable.shape[0]/validtable.shape[0], decimals=2)*100)}' + "%")
 ```
 
-![vl-app-interactivity!](/vl-site/Screenshot%20from%202024-08-07%2011-01-46.png)<br>
+![vl-app-interactivity!]( /vl-site/Screenshot%20from%202024-08-07%2011-01-46.png)<br>
 <br>
 ![vl-app-heatmap!](vl-site/Screenshot%20from%202024-08-07%2011-02-39.png)<br>
 A **cohort** is a group of subjects that share a defining characteristic and a cohort has three main attributes: **_time_**, **_size_** and **_behaviour_**. This heatmap represents all HIV-positive clients, actively on care, who started antiretroviral therapy on the same month of the same year. Values represented in terms of percentages of those suppressed i.e., **_the percentage of ART patients within the cohort with a valid documented viral load (VL) result that is below <200 copies/ml._**")
